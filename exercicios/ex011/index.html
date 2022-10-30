@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens flexiveis</title>
+</head>
+<body>
+   <h1>Imagens Flexiveis</h1>
+   <p>Essas imagens se adaptam pelo tamanho da tela do dispositivo</p>
+   <picture>
+    <source media="(min-width:1050px)" srcset="imagens/foto-g.png" type="image/png">
+    <source media="(min-width:750px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-p.png" alt="Imagem Pequena">
+   </picture>
+   <h1>Adicionando audio</h1>
+   <p>Clique para ouvir</p>
+   <audio preload="metadata" controls>
+    <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+   </audio>
+</body>
+</html>
