@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .cnome {
+            background-color: aqua;
+        }
+        .cgrup {
+            background-color: yellow;
+        }
+
+        .azul {
+            background-color: blue;
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="cgrup" span="2">
+                <col class="azul">
+        
+            </colgroup>
+            <caption>Cadatro</caption>
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">Sexo</th>
+              <th scope="col">Idade</th>
+              <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Joao</td>
+                <td>M</td>
+                <td>29</td>
+                <td>Jogador</td>
+            </tr>
+            <tr>
+                <td>Camila</td>
+                <td>F</td>
+                <td>23</td>
+                <td>Arquiteta</td>
+            </tr>
+            <tr>
+                <td>Jose</td>
+                <td>M</td>
+                <td>35</td>
+                <td>Pedreiro</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
